@@ -3,6 +3,15 @@
 <% @tasks.each do |task| %>
 <li><a href="/tasks/<%=task.id%>"><%= task.title %></a></li>
 <% end %>
+
+
+
+<%= link_to "Create a new task", tasks_new_path(@task) %>
+
+
+
+
+
 <%# now we have a list of tasks, we need to
 click on the task title and navigate to a new page,
 displaying the details of this task
